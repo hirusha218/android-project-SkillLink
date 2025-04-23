@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lk.javainstitute.skilllink">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+        </intent>
+
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MEDIA_LOCATION"
+        tools:targetApi="q" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SkillLink"
+        tools:targetApi="31">
+        <activity
+            android:name=".auth.initiatePayment"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SaveListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cactivity.AddFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ListJobPstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Employee_detailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cactivity.C_Sign_UpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cactivity.C_Sign_InActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cactivity.C_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wactivity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wactivity.W_Sign_UpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wactivity.W_Sign_InActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api" />
+
+        <service
+            android:name=".auth.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.ChatNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.NetworkChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

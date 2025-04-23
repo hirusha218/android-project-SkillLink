@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/worker_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Worker Mobile Number"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/payment_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/bank_payment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay via Bank Transfer"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/card_payment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay via Card"/>
+
+</LinearLayout> 

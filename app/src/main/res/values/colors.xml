@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_magenta">#6C0062</color>
+    <color name="Lite_green">#008810</color>
+    <color name="transparent">#D9D9D9</color>
+    <color name="online_green">#4CAF50</color>
+    <color name="offline_gray">#9E9E9E</color>
+    <color name="rating_star_filled">#FFEB3B</color>
+    <color name="rating_star_empty">#808080</color>
+</resources>

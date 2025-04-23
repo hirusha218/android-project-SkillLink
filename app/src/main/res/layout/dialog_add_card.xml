@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Card Number -->
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLines="1" />
+
+    <!-- Valid Thru -->
+    <EditText
+        android:id="@+id/valid_thru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Valid Thru (MM/YY)"
+        android:inputType="date"
+        android:maxLines="1" />
+
+    <!-- CVV -->
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/saveEmail"
+            android:layout_width="225dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            tools:text="Email" />
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="55dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:layout_constraintVertical_bias="0.217"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/jobTypeTextView"
+            android:layout_width="134dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="60dp"
+            android:text="Job Type"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toBottomOf="@+id/saveEmail" />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="108dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:text="city"
+            app:layout_constraintBottom_toBottomOf="@+id/jobTypeTextView"
+            app:layout_constraintStart_toEndOf="@+id/jobTypeTextView"
+            app:layout_constraintTop_toTopOf="@+id/jobTypeTextView" />
+
+        <TextView
+            android:id="@+id/got_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="18dp"
+            android:text="Got Job Post"
+            app:layout_constraintBottom_toTopOf="@+id/saveEmail"
+            app:layout_constraintStart_toEndOf="@+id/nameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Chat"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="?android:attr/windowSplashScreenBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileImageView"
+            app:layout_constraintTop_toBottomOf="@+id/got_post"
+            app:srcCompat="@drawable/chat_5973466" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

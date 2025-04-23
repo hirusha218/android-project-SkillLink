@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Bank Name -->
+    <EditText
+        android:id="@+id/bank_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Bank Name"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <!-- Account Number -->
+    <EditText
+        android:id="@+id/account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Account Number"
+        android:inputType="number"
+        android:maxLines="1" />
+
+    <!-- Workers Name -->
+    <EditText
+        android:id="@+id/j_nic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <!-- Branch -->
+    <EditText
+        android:id="@+id/branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Branch"
+        android:inputType="text"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customers_frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    tools:context=".cfragments.C_BankFragment">
+
+    <TextView
+        android:id="@+id/customers_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="24dp"
+        android:text="Paymet"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/customers_linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/customers_linearLayout"
+        android:layout_width="399dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/customers_bank_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="?android:attr/windowSplashScreenIconBackgroundColor"
+            android:text="@string/button8"
+            android:textColor="@color/dark_magenta"
+            app:cornerRadius="?android:attr/scrollbarSize"
+            app:rippleColor="@color/dark_magenta"
+            app:strokeColor="@color/dark_magenta"
+            app:strokeWidth="@dimen/cardview_default_radius" />
+
+        <Button
+            android:id="@+id/customers_you_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="?android:attr/windowSplashScreenBackground"
+            android:text="@string/button10"
+            android:textColor="@color/dark_magenta"
+            app:cornerRadius="?android:attr/scrollbarSize"
+            app:rippleColor="@color/dark_magenta"
+            app:strokeColor="@color/dark_magenta"
+            app:strokeWidth="@dimen/cardview_default_radius" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customers_linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_linearLayout">
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/mastercard_icon" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/paypal_icon" />
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/visa_icon" />
+
+        <ImageView
+            android:id="@+id/customers_imageView6"
+            android:layout_width="127dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/payment_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/customers_textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Card Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/customers_constraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/customers_add_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_branch" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customers_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_color"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_textView18">
+
+        <EditText
+            android:id="@+id/customers_card_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/test_bg"
+            android:hint="Card Number"
+            app:layout_constraintBottom_toTopOf="@+id/customers_valid_thru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/customers_valid_thru"
+            android:layout_width="163dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/test_bg"
+            android:hint="Valid Thru"
+            android:inputType="date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/customers_cvv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customers_card_number" />
+
+        <EditText
+            android:id="@+id/customers_cvv"
+            android:layout_width="75dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/test_bg"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/customers_valid_thru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/customers_valid_thru"
+            app:layout_constraintTop_toTopOf="@+id/customers_valid_thru"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/customers_textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="Bank Account Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/customers_accoutnumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_linearLayout3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/customers_youname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/test_bg"
+        android:hint="Your name"
+        app:layout_constraintBottom_toTopOf="@+id/customers_bankname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_accoutnumber" />
+
+    <EditText
+        android:id="@+id/customers_accoutnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/test_bg"
+        android:hint="Account number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_linearLayout3" />
+
+    <EditText
+        android:id="@+id/customers_branch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/test_bg"
+        android:hint="Branch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_bankname" />
+
+    <EditText
+        android:id="@+id/customers_bankname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/test_bg"
+        android:hint="Bank name"
+        app:layout_constraintBottom_toTopOf="@+id/customers_branch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customers_youname" />
+
+
+    <ImageButton
+        android:id="@+id/customers_add_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginEnd="24dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/plus_create_new_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/customers_textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/customers_textView18"
+        app:layout_constraintTop_toTopOf="@+id/customers_textView18"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/customers_imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginEnd="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/plus_create_new_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/customers_textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/customers_textView17"
+        app:layout_constraintTop_toTopOf="@+id/customers_textView17"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
